@@ -1,0 +1,33 @@
+{
+  "name": "envswitch",
+  "version": "0.1.0",
+  "description": "Chrome extension to switch various environments",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felix Hofmann <felix.hofmann@rustyy.de>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rustyy/EnvSwitch.git"
+  },
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "eslint": "^4.0.0",
+    "eslint-config-google": "^0.8.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "rollup": "^0.43.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-eslint": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^4.0.0"
+  }
+}
