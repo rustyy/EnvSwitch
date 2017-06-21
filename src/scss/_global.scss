@@ -1,0 +1,74 @@
+@import "conf";
+
+//////////
+// Messages.
+//////////
+.message {
+  font-weight: 700;
+  left: 0;
+  padding: 30px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateY(-100%);
+  transition: transform 200ms;
+  z-index: 1;
+}
+
+.message--success {
+  background: $color--success;
+}
+
+.message--error {
+  background: $color--danger;
+  color: $color--danger--composite;
+}
+
+.message.message--is-visible {
+  transform: translateY(0);
+}
+
+//////////
+// Buttons
+//////////
+.btn {
+  transition: transform 200ms, background 500ms, color 200ms;
+  border-radius: 5px;
+  border: 2px solid;
+  display: inline-block;
+  font-weight: 700;
+  padding: 12px;
+  text-transform: uppercase;
+  transform: scale3d(1, 1, 1);
+
+  &:hover {
+    will-change: transform, background, color;
+    transform: scale3d(.95, .95, 1);
+  }
+}
+
+.btn--primary {
+  background: #fff;
+  border-color: $color--primary;
+  color: $color--primary;
+
+  &:hover {
+    background: $color--primary;
+    color: $color--danger--composite;
+  }
+}
+
+.btn--primary-disabled {
+  border-color: #ddd;
+  color: #ddd;
+}
+
+.btn--warn {
+  background: $color--danger;
+  border-color: $color--danger;
+  color: $color--danger--composite;
+
+  &:hover {
+    background: red;
+  }
+}

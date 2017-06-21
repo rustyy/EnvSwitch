@@ -1,0 +1,70 @@
+@import "conf";
+@import "global";
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.overview {
+  margin: 30px 0;
+}
+
+.import {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.import__input {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  z-index: -1;
+}
+
+.import__label::before {
+  content: '+';
+  display: inline-block;
+  font-size: 1.5em;
+  line-height: 0;
+  padding-right: .5em;
+}
+
+.configuration-list:empty::before {
+  content: 'No configurations available';
+}
+
+.configuration {
+  border-radius: 2px;
+  border: 1px solid #ededed;
+  margin: 20px 0;
+}
+
+.configuration__header {
+  align-items: center;
+  background: #ededed;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.configuration__name {
+  margin: 0;
+}
+
+.configuration__json {
+  padding: 10px;
+}
+
